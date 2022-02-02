@@ -1,0 +1,116 @@
+<!-- 제일 첫 화면 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+div.banner:hover {
+  border: 1px solid #777;
+}
+
+div.banner img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.tagbox {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+div.tag a {
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<div class="responsive">
+  <div class="banner">
+    <a target="_top" href="recommend.htm">
+      <img src="banner_recom.png" alt="snow" width="600" height="300">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="banner">
+    <a target="_top" href="localfesta.htm">
+      <img src="banner_festa.png" alt="이달의지역축제" width="600" height="300">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="banner">
+    <a target="_top" href="hottravel.htm">
+      <img src="banner_hot.png" alt="요즘뜨는여행지" width="600" height="300">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="banner">
+    <a target="_top" href="map.htm">
+      <img src="mapdetail.png" alt="지도" width="686" height="935">
+    </a>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;"></div>
+
+<div class="tagbox">
+  <div class="tag">
+    <p class="tag" id="t_family"><a target="_top" href="family.htm">#가족</a></p>
+    <p class="tag" id="t_couple"><a target="_top" href="couple.htm">#커플</a></p>
+    <p class="tag" id="t_alone"><a target="_top" href="alone.htm">#혼자</a></p>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>
